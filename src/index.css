@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #eb4a5a;
+  --white: #f9fafc;
+  --light_grey: #f6f3f3;
+  --grey: #434343;
+  --blue: #274671;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+body .Imag {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+button {
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--blue);
+  transition: 0.5s;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  max-width: 200px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.cuerpo h1 {
+  color: var(--blue);
+  margin: 2rem;
+  border-color: #434343;
+}
+
+.cuerpo {
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
+
+.centro {
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 400px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: 80%;
+    left: 66%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  body {
+    width: 70%;
+    left: 50%;
+  }
+}
