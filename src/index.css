@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --red: #eb4a5a;
   --white: #f9fafc;
@@ -13,11 +12,9 @@
   --grey: #434343;
   --blue: #274671;
 }
-
 body {
   font-family: "Oswald", sans-serif;
 }
-
 body .Imag {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,7 +22,6 @@ body .Imag {
   background-position: center;
   height: 100vh;
 }
-
 button {
   background-color: transparent;
   font-size: 15px;
@@ -40,23 +36,19 @@ button {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
 }
-
 button:hover {
   transform: scale(1.2);
 }
-
 .cuerpo h1 {
   color: var(--blue);
   margin: 2rem;
   border-color: #434343;
 }
-
 .cuerpo {
   text-align: center;
   padding: 2rem;
   margin: auto;
 }
-
 .centro {
   background-color: white;
   text-align: center;
@@ -66,17 +58,30 @@ button:hover {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
 }
-
-@media screen and (max-width: 900px) {
-  body {
+@media screen and (max-width: 920px) {
+  .Imag {
     height: 80%;
-    left: 66%;
+    margin: auto;
+  }
+  .cuerpo {
+    margin: 0;
+    height: 20%;
+    height: 20%;
+  }
+  button {
+    margin: 25% 0 0 45%;
   }
 }
-
-@media screen and (max-width: 374px) {
-  body {
-    width: 70%;
-    left: 50%;
+@media screen and (max-width: 450px) {
+  .Imag {
+    height: 60%;
+    margin: auto;
+  }
+  .cuerpo {
+    margin: 0;
+    height: 30%;
+  }
+  button {
+    margin: 25% 0 0 40%;
   }
 }
